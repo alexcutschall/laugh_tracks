@@ -5,4 +5,8 @@ class Comedian < ActiveRecord::Base
   def self.average_age
     sum(:comedians.age) / :comedians.length
   end
+
+  def self.special_count
+    :comedians.specials.count
+  end
 end

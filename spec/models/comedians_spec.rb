@@ -15,4 +15,8 @@ RSpec.describe Comedian do
       Comedian.average_age
     end
   end
+  describe ".special_count" do
+    it "should show how many specials the comedian has" do
+    end
+  end
 end

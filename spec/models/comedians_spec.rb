@@ -9,6 +9,10 @@ RSpec.describe Comedian do
 
       expect(comedian).to_not be_valid
     end
-
+  end
+  describe ".average_age" do
+    it "should get the average age of all comedians" do
+      Comedian.average_age
+    end
   end
 end

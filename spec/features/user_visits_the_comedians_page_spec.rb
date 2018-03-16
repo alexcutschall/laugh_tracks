@@ -6,6 +6,11 @@ RSpec.describe Comedian do
 
         expect(page).to have_content("Hannibal")
       end
+      it "should see average age of all comedians" do
+        visit '/comedians'
+
+        expect(page).to have_content(0)
+      end
       it "should see list of specials" do
         visit "/comedians"
 
